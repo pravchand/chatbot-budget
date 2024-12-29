@@ -38,7 +38,6 @@ try:
     text, chunks, qdrant_client, openai_client = initialize_services()
 except Exception as e:
     print(f"Startup Error: {str(e)}")
-    # You might want to exit here depending on your requirements
     raise
 @app.route('/')
 def serve_index():

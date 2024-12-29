@@ -62,7 +62,7 @@ def chat():
         
         return jsonify({
             'response': response,
-            'context': references  # Optional: return context if needed by frontend
+            'context': references  
         })
 
     except Exception as e:
